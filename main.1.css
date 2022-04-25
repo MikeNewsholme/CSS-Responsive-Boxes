@@ -1,0 +1,39 @@
+body {
+  margin: 20px;
+  background: blanchedalmond;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.child {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 10px;
+}
+
+.a,
+.b,
+.c {
+  width: 100%;
+}
+
+/* For mobile phones: */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .b {
+    width: 75%;
+  }
+  .c {
+    width: 20%;
+  }
+}
